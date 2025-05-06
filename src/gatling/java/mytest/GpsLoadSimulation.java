@@ -25,7 +25,7 @@ public class GpsLoadSimulation extends Simulation {
     {
         setUp(
                 scn.injectOpen(
-                        constantUsersPerSec(2500).during(Duration.ofSeconds(5))
+                        constantUsersPerSec(25).during(Duration.ofSeconds(5))
                 )
         ).protocols(httpProtocol);
     }
