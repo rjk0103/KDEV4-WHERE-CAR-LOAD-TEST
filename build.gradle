@@ -11,3 +11,17 @@ dependencies {
     gatling 'io.gatling:gatling-core:3.10.5'
     gatling 'io.gatling:gatling-http:3.10.5'
 }
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+}
+
+gatling {
+    jvmArgs = [
+            '-Xms1g',                  // 초기 힙 메모리 1GB
+            '-Xmx2g',                  // 최대 힙 메모리 2GB
+            '-XX:+UseG1GC',            // G1 Garbage Collector 사용
+            '-XX:MaxGCPauseMillis=200' // 최대 GC 일시 정지 시간 200ms
+    ]
+}
