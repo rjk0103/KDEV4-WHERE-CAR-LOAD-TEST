@@ -22,6 +22,7 @@ public class GpsLoadSimulation extends Simulation {
                             .check(status().is(200))
             );
 
+
     {
         setUp(
                 scn.injectOpen(
