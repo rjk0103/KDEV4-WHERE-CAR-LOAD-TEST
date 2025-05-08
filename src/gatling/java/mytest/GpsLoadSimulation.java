@@ -14,7 +14,7 @@ public class GpsLoadSimulation extends Simulation {
 //            .baseUrl("http://ts.where-car.com:8090") // 서버 주소
             .baseUrl("http://ts.where-car.com:8080") // 서버 주소
             .contentTypeHeader("application/json")
-            .header("Token", "eyJhbGciOiJIUzI1NiJ9.eyJtZG4iOiIwMTIzNDU2Nzg5MCIsImlhdCI6MTc0NjU5OTk2OSwiZXhwIjoxNzQ2OTQ1NTY5fQ.LIKNnKOAKOemz87_QzNxAGAR1v8iEh4t0SHPOo8u2wM");
+            .header("Token", "eyJhbGciOiJIUzI1NiJ9.eyJtZG4iOiIwMTIzNDU2Nzg5MCIsImlhdCI6MTc0NjY4MzI4NiwiZXhwIjoxNzQ3MDI4ODg2fQ.12_aGWoczj4KA4wvDtn_Nz0cqQlcbgvrzdi7tHS2vDc");
 
 
     ScenarioBuilder scn = scenario("GPS Load Test")
