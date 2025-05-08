@@ -30,7 +30,7 @@ public class GpsLoadSimulation extends Simulation {
     {
         setUp(
                 scn.injectOpen(
-                        constantUsersPerSec(100).during(Duration.ofSeconds(1))
+                        constantUsersPerSec(400).during(Duration.ofSeconds(1))
                 )
         ).protocols(httpProtocol);
     }
@@ -39,7 +39,7 @@ public class GpsLoadSimulation extends Simulation {
 
     private static final String jsonBody = """
         {
-            "mdn": "01234567890",
+            "mdn": "0234567890",
             "tid": "A001",
             "mid": "6",
             "pv": "5",
