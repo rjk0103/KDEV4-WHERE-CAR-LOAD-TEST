@@ -12,7 +12,7 @@ public class GpsLoadSimulation extends Simulation {
 
     HttpProtocolBuilder httpProtocol = http
 //            .baseUrl("http://ts.where-car.com:8090") // 서버 주소
-            .baseUrl("https://ts.where-car.com:8080") // 서버 주소
+            .baseUrl("http://ts.where-car.com:8080") // 서버 주소
             .contentTypeHeader("application/json")
             .header("Token", "eyJhbGciOiJIUzI1NiJ9.eyJtZG4iOiIwMTIzNDU2Nzg5MCIsImlhdCI6MTc0NjU5OTk2OSwiZXhwIjoxNzQ2OTQ1NTY5fQ.LIKNnKOAKOemz87_QzNxAGAR1v8iEh4t0SHPOo8u2wM");
 
