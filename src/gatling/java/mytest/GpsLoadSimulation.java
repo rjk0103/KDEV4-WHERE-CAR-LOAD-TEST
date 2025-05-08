@@ -30,7 +30,7 @@ public class GpsLoadSimulation extends Simulation {
     {
         setUp(
                 scn.injectOpen(
-                        constantUsersPerSec(100).during(Duration.ofSeconds(1))
+                        constantUsersPerSec(400).during(Duration.ofSeconds(1))
                 )
         ).protocols(httpProtocol);
     }
